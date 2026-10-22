@@ -1,0 +1,36 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "142419754.auto-deco",
+	"name": "Auto Decorate",
+	"version": "v1.0.0",
+	"developer": "you142419754rname",
+	"description": "Select blocks in the editor, pick a style (this level, an online level or a player's level) and Auto Decorate adds clean, flowing decoration along the exposed edges.",
+	"tags": ["editor", "enhancement", "utility"],
+	"settings": {
+		"open-menu-key": {
+			"type": "keybind",
+			"name": "Open Auto Decorate Menu",
+			"description": "Opens the Auto Decorate menu while you are in the editor.",
+			"default": "Ctrl+Shift+D",
+			"category": "editor"
+		},
+		"max-objects": {
+			"type": "int",
+			"name": "Max Objects Per Run",
+			"description": "Safety limit: Auto Decorate stops after placing this many objects in one run.",
+			"default": 4000,
+			"min": 100,
+			"max": 20000,
+			"control": {
+				"input": true,
+				"slider": false
+			}
+		}
+	}
+}
