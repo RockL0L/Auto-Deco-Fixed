@@ -27,9 +27,9 @@ public:
 
 	// LevelManagerDelegate
 	void loadLevelsFinished(cocos2d::CCArray* levels, char const* key) override;
-	void loadLevelsFinished(cocos2d::CCArray* levels, char const* key, int type);
+	void loadLevelsFinished(cocos2d::CCArray* levels, char const* key, int type) override;
 	void loadLevelsFailed(char const* key) override;
-	void loadLevelsFailed(char const* key, int type);
+	void loadLevelsFailed(char const* key, int type) override;
 
 private:
 	enum class Stage { Idle, SearchByName, DownloadFirst, SearchUserLevels, DownloadMore };
