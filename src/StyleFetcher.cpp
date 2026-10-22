@@ -27,7 +27,7 @@ auto callDownload(M* m, int id, long) -> decltype(m->downloadLevel(id, false), v
 
 // Some GJGameLevel fields are plain ints, others are wrapped (SeedValueRSV).
 template <class T>
-int asInt(T const& v) {
+int asInt(T v) {
 	if constexpr (requires { v.value(); }) {
 		return static_cast<int>(v.value());
 	} else {
